@@ -1,0 +1,11 @@
+<h2>Listagem de pessoas</h2>
+
+<ul class="list-group">
+  <li class="list-group-item" ng-repeat="pessoa in pessoas">
+    {{ pessoa.nome }}, {{ pessoa.cidade }}
+    <div class="pull-right">
+      <a class="btn btn-warning btn-xs" href="#!/pessoa/{{$index}}">Editar</a>
+      <a class="btn btn-danger btn-xs" href="#!/pessoa/remover/{{$index}}">Remover</a>
+    </div>
+  </li>
+</ul>

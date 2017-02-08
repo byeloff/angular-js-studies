@@ -1,0 +1,22 @@
+<h2>Editar {{pessoa.nome}}</h2>
+
+<form>
+  <div class="form-group">
+    <label for="nome">Nome</label>
+    <input type="text" class="form-control" id="nome" ng-model="pessoa.nome" placeholder="Nome">
+  </div>
+
+  <div class="form-group">
+    <label for="cidade">Cidade</label>
+    <input type="text" class="form-control" id="cidade" ng-model="pessoa.cidade" placeholder="Cidade">
+  </div>
+
+  <div class="form-group" ng-show="result">
+    <div class="alert alert-success">{{result}}</div>
+  </div>
+
+  <div class="form-group">
+    <a href="#!/" class="btn btn-warning">Voltar</a>
+  </div>
+
+</form>

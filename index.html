@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html ng-app="pessoas">
+  <head>
+    <meta charset="utf-8">
+    <title>Pessoas</title>
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+  </head>
+  <body>
+
+    <div class="container" ng-controller="CtrlPessoas">
+        <h1>Sistema de gerenciamento de pessoas</h1>
+
+        <ul class="nav nav-pills">
+          <li role="presentation"><a href="#!/">Listar</a></li>
+          <li role="presentation"><a href="#!/pessoa/adicionar">Adicionar</a></li>
+        </ul>
+
+        <hr />
+
+        <div ng-view></div>
+
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.1/angular.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.1/angular-route.min.js"></script>
+
+    <script src="pessoas.js"></script>
+
+  </body>
+</html>

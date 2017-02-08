@@ -1,0 +1,25 @@
+<!doctype html>
+<html ng-app="app">
+  <meta charset="utf-8">
+  <head>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.1/angular.min.js"></script>
+  </head>
+  <body>
+
+    <input type="text" ng-model="valor" />
+    <input type="checkbox" ng-model="checado" /> Show
+
+    <div ng-show="checado">
+      Olá {{valor}}!
+    </div>
+
+    <div ng-hide="checado">
+      Tchal
+    </div>
+
+    <script>
+      var myApp = angular.module('app', []);
+    </script>
+
+  </body>
+</html>
